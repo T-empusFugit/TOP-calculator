@@ -2,20 +2,45 @@
 
 .display {
     height: 50px;
-    width: 200px;
-    background-color: grey;
+    width: 250px;
+    background-color: rgb(159, 163, 162);
     margin-bottom: 1em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
+
+.display-value {
+    margin-right: 8px;
+}
+
 
 .container-keypad {
     display: flex;
     direction: row;
     flex-wrap: wrap;
-    width: 200px;
+    width: 250px;
+    height: 250px;
     /* align-items: center; */
     justify-content: center;
 }
 
-.keypad, .divide {
+.keypad, .divide, .multiply, .subtract, .sum, .equal, .clear {
     flex: 0 0 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(184, 179, 179);
+}
+
+.divide, .multiply, .subtract, .sum {
+    background-color: rgb(159, 163, 162);
+}
+
+
+.equal {
+    background-color: rgb(108, 110, 109);
+}
+
+.clear {
+    background-color: rgb(234, 134, 134);
 }
